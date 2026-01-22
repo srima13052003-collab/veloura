@@ -22,7 +22,7 @@ function loadProducts(containerId, folder, images, title) {
 loadProducts(
   "chains-container",
   "chains",
-  ["chain_199_01.jpeg", "chain_299_01.jpeg"],
+  ["chain_49_01.jpeg", "chain_49_02.jpeg"],
   "Veloura Chain"
 );
 
@@ -30,7 +30,7 @@ loadProducts(
 loadProducts(
   "bracelets-container",
   "bracelets",
-  ["bracelet_149_01.jpeg", "bracelet_199_01.jpeg"],
+  ["bracelet_199_01.jpeg", "bracelet_199_02.jpeg","bracelet_199_03.jpeg","bracelet_199_04.jpeg","bracelet_199_05.jpeg","bracelet_199_06.jpeg","bracelet_199_07.jpeg","bracelet_199_08.jpeg"],
   "Veloura Bracelet"
 );
 
