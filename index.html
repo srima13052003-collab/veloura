@@ -5,42 +5,91 @@
   <title>Veloura Jewellery</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 </head>
 <body>
 
-<header>
-  <img src="images/logo.png" alt="Veloura Logo" class="logo">
-  <h1>Veloura</h1>
-  <p>Adorned in Divine Light</p>
+<!-- TOP BAR -->
+<header class="top-bar">
+  <i class="fa fa-search"></i>
+  <img src="images/logo.png" class="logo">
+  <i class="fa fa-shopping-cart"><span class="badge">0</span></i>
 </header>
 
-<section class="products-section">
-  <h2 class="section-title">
-  <a href="Necklace.html" class="section-link">
-    💎 Necklace
-  </a>
-</h2>
-  <div class="products" id="chains-container"></div>
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>DAILY WEAR</h1>
+    <p>COLLECTION</p>
+    <a href="Necklace.html" class="hero-btn">EXPLORE NOW</a>
+  </div>
 </section>
 
-<section class="products-section">
-  <h2 class="section-title">
-  <a href="Bracelets.html" class="section-link">
-    🔗 Bracelets
-  </a>
-</h2>
-  <div class="products" id="bracelets-container"></div>
+<!-- ACCORDION -->
+<section class="accordion">
+
+  <div class="accordion-item">
+    <button class="accordion-btn">Categories <span>+</span></button>
+    <div class="accordion-content">
+      <a href="Necklace.html">Necklaces</a>
+      <a href="Bracelets.html">Bracelets</a>
+      <a href="Earrings.html">Earrings</a>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="accordion-btn">Information <span>+</span></button>
+    <div class="accordion-content">
+      <p>About Veloura</p>
+      <p>Privacy Policy</p>
+      <p>Terms & Conditions</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="accordion-btn">Quick Links <span>+</span></button>
+    <div class="accordion-content">
+      <p>My Account</p>
+      <p>Orders</p>
+      <p>Support</p>
+    </div>
+  </div>
+
 </section>
 
-<section class="products-section">
-  <h2 class="section-title">
-  <a href="Earrings.html" class="section-link">
-    ✨ Earrings
-  </a>
-</h2>
-  <div class="products" id="earrings-container"></div>
+<!-- CONTACT -->
+<section class="contact">
+  <p><i class="fa fa-envelope"></i> srivishaldp@gmail.com</p>
+  <p><i class="fa fa-phone"></i> +91 9787904500</p>
 </section>
+
+<!-- SOCIAL -->
+<section class="social">
+  <p>Follow Us on Socials</p>
+  <i class="fab fa-instagram"></i>
+  <i class="fab fa-facebook"></i>
+  <i class="fab fa-youtube"></i>
+  <i class="fab fa-linkedin"></i>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <input type="email" placeholder="E-mail">
+  <button>Subscribe</button>
+</section>
+
+<!-- PAYMENTS -->
+<section class="payments">
+  <img src="images/payments.png">
+</section>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+  <a class="active"><i class="fa fa-home"></i><span>Home</span></a>
+  <a><i class="fa fa-bars"></i><span>Menu</span></a>
+  <a><i class="fa fa-shopping-cart"></i><span>Cart</span></a>
+  <a><i class="fa fa-heart"></i><span>Wishlist</span></a>
+  <a><i class="fa fa-user"></i><span>Account</span></a>
+</nav>
 
 <script src="script.js"></script>
 </body>
