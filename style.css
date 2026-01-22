@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0b0b0b;
+  color: gold;
+  text-align: center;
+}
+
+header {
+  padding: 30px;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.products-section {
+  padding: 30px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #111;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(255,215,0,0.2);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+button {
+  background: gold;
+  color: black;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
