@@ -53,3 +53,11 @@ function addToCart(name, price, image) {
 
   alert(`${name} added to cart`);
 }
+function updateCartCount() {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const cartCount = document.getElementById("cart-count");
+  if (cartCount) {
+    cartCount.innerText = cart.length;
+  }
+}
+
