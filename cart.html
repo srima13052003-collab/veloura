@@ -1,24 +1,15 @@
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
-const cartContainer = document.getElementById("cart-items");
-let total = 0;
+<body>
 
-cart.forEach(item => {
-  total += item.price;
+<header class="top-bar">
+  <a href="index.html" style="color: gold;">← Back</a>
+  <h2>Your Cart</h2>
+</header>
 
-  const card = document.createElement("div");
-  card.className = "product-card";
+<section class="products" id="cart-items"></section>
 
-  card.innerHTML = `
-    <img src="${item.image}">
-    <h3>${item.name}</h3>
-    <p>₹${item.price}</p>
-  `;
+<h3 id="total-price"></h3>
 
-  cartContainer.appendChild(card);
-});
+<button onclick="checkoutUPI()">Proceed to Pay</button>
 
-document.getElementById("total-price").innerText = `Total: ₹${total}`;
-
-function checkoutUPI() {
-  alert("UPI payment will be added next");
-}
+<script src="cart.js"></script>
+</body>
