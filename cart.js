@@ -1,4 +1,4 @@
-   let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 const cartContainer = document.getElementById("cart-items");
 let total = 0;
 
@@ -9,6 +9,7 @@ cart.forEach(item => {
   card.className = "product-card";
 
   card.innerHTML = `
+    <img src="${item.image}">
     <h3>${item.name}</h3>
     <p>₹${item.price}</p>
   `;
@@ -19,5 +20,5 @@ cart.forEach(item => {
 document.getElementById("total-price").innerText = `Total: ₹${total}`;
 
 function checkoutUPI() {
-  alert("UPI payment will be added next");
+  alert("UPI payment coming next");
 }
