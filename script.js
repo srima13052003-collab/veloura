@@ -57,4 +57,5 @@ function updateCartCount() {
     cartCount.innerText = cart.length;
   }
 }
+updateCartCount();
 
