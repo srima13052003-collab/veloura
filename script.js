@@ -43,14 +43,11 @@ loadSingleProduct(
 function addToCart(name, price, image) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  cart.push({
-    name: name,
-    price: price,
-    image: image
-  });
+  cart.push({ name, price, image });
 
   localStorage.setItem("cart", JSON.stringify(cart));
 
+  updateCartCount();
   alert(`${name} added to cart`);
 }
 function updateCartCount() {
