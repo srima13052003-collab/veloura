@@ -20,7 +20,7 @@ function loadSingleProduct(containerId, folder, image, title, link) {
 loadSingleProduct(
   "chains-container",
   "chains",
-  "chain_49_01.jpeg",
+  "Chain_49_01.jpeg",
   "Veloura Necklace",
   "Necklace.html"
 );
