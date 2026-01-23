@@ -10,24 +10,36 @@
 
 <!-- TOP BAR -->
 <header class="top-bar">
-  <i class="fa fa-search"></i>
-
-  <img src="images/logo.png" class="logo">
-
-  <a href="cart.html" class="cart-icon">
-    <i class="fa fa-shopping-cart"></i>
-    <span class="badge" id="cart-count">0</span>
-  </a>
-</header>
-
-
-<!-- HERO SECTION -->
-<section class="hero">
-  <div class="hero-content">
-    <h1>DAILY WEAR</h1>
-    <p>COLLECTION</p>
-    <a href="Necklace.html" class="hero-btn">EXPLORE NOW</a>
+  <div class="left">
+    <img src="images/logo.png" class="logo">
+    <span class="brand-name">Veloura Collections</span>
   </div>
+
+  <div class="right">
+    <input type="text" id="searchBox" placeholder="Search products..." onkeyup="searchProducts()">
+    <a href="cart.html" class="cart-icon">
+      <i class="fa fa-shopping-cart"></i>
+      <span class="badge" id="cart-count">0</span>
+    </a>
+  </div>
+</header>
+<section class="category-grid">
+
+  <a href="Necklace.html" class="category-card">
+    <img src="images/chains/chain_49_01.jpeg" alt="Necklaces">
+    <h2>Necklaces</h2>
+  </a>
+
+  <a href="Bracelets.html" class="category-card">
+    <img src="images/bracelets/bracelet_199_01.jpeg" alt="Bracelets">
+    <h2>Bracelets</h2>
+  </a>
+
+  <a href="Earrings.html" class="category-card">
+    <img src="images/earrings/earring_59_02.jpeg" alt="Earrings">
+    <h2>Earrings</h2>
+  </a>
+
 </section>
 
 <!-- ACCORDION -->
@@ -53,15 +65,6 @@
     </div>
   </div>
 
-  <div class="accordion-item">
-    <button class="accordion-btn">Quick Links <span>+</span></button>
-    <div class="accordion-content">
-      <p>My Account</p>
-      <p>Orders</p>
-      <p>Support</p>
-    </div>
-  </div>
-
 </section>
 
 <!-- CONTACT -->
@@ -73,10 +76,10 @@
 <!-- SOCIAL -->
 <section class="social">
   <p>Follow Us on Socials</p>
+ <a href="https://www.instagram.com/veloura._.collections/s" target="_blank">
   <i class="fab fa-instagram"></i>
-  <i class="fab fa-facebook"></i>
-  <i class="fab fa-youtube"></i>
-  <i class="fab fa-linkedin"></i>
+</a>
+
 </section>
 
 <!-- NEWSLETTER -->
