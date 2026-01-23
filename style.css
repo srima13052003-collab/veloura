@@ -186,3 +186,9 @@ body {
   margin-top: 10px;
   font-weight: bold;
 }
+.socials a {
+  color: gold;
+  font-size: 22px;
+  margin: 10px;
+}
+
