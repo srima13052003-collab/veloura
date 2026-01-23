@@ -15,6 +15,15 @@ function loadSingleProduct(containerId, folder, image, title, link) {
 
   container.appendChild(card);
 }
+function searchProducts() {
+  const search = document.getElementById("searchBox").value.toLowerCase();
+  const cards = document.querySelectorAll(".product-card");
+
+  cards.forEach(card => {
+    const name = card.innerText.toLowerCase();
+    card.style.display = name.includes(search) ? "block" : "none";
+  });
+}
 
 /* HOME PAGE – ONLY ONE IMAGE PER CATEGORY */
 loadSingleProduct(
