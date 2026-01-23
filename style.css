@@ -163,3 +163,26 @@ body {
   font-size: 14px;
 }
 
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+.category-card {
+  text-decoration: none;
+  color: gold;
+}
+
+.category-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.category-card h2 {
+  margin-top: 10px;
+  font-weight: bold;
+}
